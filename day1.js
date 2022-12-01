@@ -12,10 +12,7 @@ fs.readFile('./day1.txt', 'utf8', (err, data) => {
 function day1 (data) {
 
     const totals = data.map(item => {
-        const sum = item.reduce((a,b)=>{
-            return a+b;
-        });
-        return sum;
+        return item.reduce((a,b)=>a+b);
     })
     
     totals.sort((a,b)=>b-a);    
