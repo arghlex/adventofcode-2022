@@ -67,16 +67,16 @@ function part2 (data) {
 
 function getMyChoice(elfChoice, outcome) {
     if (elfChoice === 1) {
-        if (outcome === 1) { return 3}
-        if (outcome === 2) { return 1}
-        if (outcome === 3) { return 2}
+        if (outcome === 1) return 3;
+        if (outcome === 2) return 1;
+        if (outcome === 3) return 2;
     } else if (elfChoice === 2) {
-        if (outcome === 1) { return 1}
-        if (outcome === 2) { return 2}
-        if (outcome === 3) { return 3}       
+        if (outcome === 1) return 1;
+        if (outcome === 2) return 2;
+        if (outcome === 3) return 3;       
     } else {
-        if (outcome === 1) {return 2}
-        if (outcome === 2) {return 3}
-        if (outcome === 3) {return 1}
+        if (outcome === 1) return 2;
+        if (outcome === 2) return 3;
+        if (outcome === 3) return 1;
     }
 }
